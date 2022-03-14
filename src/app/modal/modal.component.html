@@ -1,0 +1,15 @@
+<h2>Modal</h2>
+
+<a-button (click)="isVisible = true" text="Show Modal"></a-button>
+<a-modal [visible]="isVisible">
+  <h3 slot="header">Title</h3>
+  <div slot="body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+  <div slot="footer" style="display: flex; justify-content: space-between;">
+    <a-button id=close text="Cancel" type="outline" (click)="isVisible = false"></a-button>
+    <a-button text="agree" (click)="isVisible = false"></a-button>
+  </div>
+</a-modal>

@@ -1,0 +1,46 @@
+app-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+
+  .layout-wrapper {
+    flex-grow: 1;
+    display: flex;
+  }
+
+  .layout-content {
+    margin-left: var(--sidebar-width);
+    padding: calc(var(--nav-height) + 2rem) 3rem 0;
+    display: flex;
+    flex-grow: 1;
+    transition: all .3s;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  app-root {
+    .layout-content {
+      margin-left: 0;
+      padding: calc(var(--nav-height) + 1rem) 1rem 0;
+    }
+
+    .mask {
+      position: fixed;
+      transition: all .2s;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      background-color: #00000085;
+      left: 0;
+      top: 0;
+      display: none;
+    }
+
+    .mask.open {
+      display: block;
+    }
+  }
+
+
+}
