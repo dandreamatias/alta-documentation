@@ -7,42 +7,45 @@
 <div class="menu-wrapper">
   <h3>General</h3>
   <ul>
-    <li (click)="onMenuClick()">
-      <a [routerLink]="['/get-started']">Get Started</a>
+    <li (click)="onMenuClick()" routerLinkActive="active">
+      <a [routerLink]="['/get-started']" >Get Started</a>
     </li>
     <li (click)="onMenuClick()">Theming</li>
     <li (click)="onMenuClick()">Why Alta</li>
-  </ul>
-  <h3>Support</h3>
-  <ul>
-    <li>Donate</li>
-    <li>Contribute</li>
+    <li (click)="onMenuClick()">Upgrade</li>
   </ul>
   <h3>Components</h3>
   <ul>
     <li>Accordition</li>
-    <li (click)="onMenuClick()"><a [routerLink]="['/alert']">Alert</a></li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/alert']">Alert</a></li>
     <li>Avatar</li>
     <li>Breadcrumb</li>
     <li>Buttons</li>
     <li>Card</li>
     <li>Carousel</li>
-    <li>Image</li>
-    <li>Input text</li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/dropdown']">Dropdown</a></li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/image']">Image</a></li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/input-text']">Input text</a></li>
     <li>Input number</li>
     <li>Input password</li>
     <li>Input checkbox</li>
     <li>Input radio</li>
     <li>Input upload</li>
     <li>List</li>
-    <li (click)="onMenuClick()"><a [routerLink]="['/modal']">Modal</a></li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/modal']">Modal</a></li>
     <li>Pagination</li>
-    <li>Panel</li>
-    <li>Progress</li>
-    <li>Rating</li>
-    <li>Table</li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/panel']">Panel</a></li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/progress']">Progress</a></li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/rating']">Rating</a></li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/table']">Table</a></li>
     <li>Tabs</li>
     <li>Tag</li>
     <li>Toast</li>
+  </ul>
+  <h3>Others</h3>
+  <ul>
+    <li>Changelog</li>
+    <li>Donate</li>
+    <li>Contribute</li>
   </ul>
 </div>

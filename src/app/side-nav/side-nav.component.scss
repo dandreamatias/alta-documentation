@@ -15,6 +15,10 @@ app-side-nav {
     display: block;
   }
 
+  li.active {
+    background-color: #eff3f8;
+  }
+
   .title {
     .gg-bolt::before {
       border-bottom: 12px solid #2a92e4;
@@ -27,6 +31,7 @@ app-side-nav {
       right: 0;
       bottom: 0;
     }
+
     padding: 0.25rem;
     height: var(--nav-height);
     display: flex;

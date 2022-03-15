@@ -4,11 +4,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { NavComponent } from './nav/nav.component';
-import { HomeComponent } from './home/home.component';
-import { GetStartedComponent } from './get-started/get-started.component';
-import { AlertComponent } from './alert/alert.component';
-import  'alta-ui/dist/index.cjs.js';
-import { ModalComponent } from './modal/modal.component';
+import { HomeComponent } from './pages/home/home.component';
+import { GetStartedComponent } from './pages/get-started/get-started.component';
+import { AlertComponent } from './pages/alert/alert.component';
+import { ModalComponent } from './pages/modal/modal.component';
+import { ImageComponent } from './pages/image/image.component';
+import  'alta-ui/dist/alta-ui/alta-ui.esm.js';
+import { InputTextComponent } from './pages/input-text/input-text.component';
+import {FormsModule} from '@angular/forms';
+import { ProgressComponent } from './pages/progress/progress.component';
+import { TableComponent } from './pages/table/table.component';
+import { DropdownComponent } from './pages/dropdown/dropdown.component';
+import { RatingComponent } from './rating/rating.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +26,19 @@ import { ModalComponent } from './modal/modal.component';
     HomeComponent,
     GetStartedComponent,
     AlertComponent,
-    ModalComponent
+    ModalComponent,
+    ImageComponent,
+    InputTextComponent,
+    ProgressComponent,
+    TableComponent,
+    DropdownComponent,
+    RatingComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
