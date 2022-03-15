@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-alert',
@@ -6,4 +6,8 @@ import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
   styleUrls: ['./alert.component.scss']
 })
 export class AlertComponent  {
+  cssValiables: string[] = [
+    '--padding: 1rem 1.5rem;',
+    '--default-bg: white;'
+  ];
 }

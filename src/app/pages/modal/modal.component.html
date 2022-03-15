@@ -1,8 +1,37 @@
-<h2>Modal</h2>
+<a-card class="mt-m">
+  <h1 slot="header">Modal</h1>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</a-card>
 
 <a-button (click)="isVisible = true" text="Show Modal"></a-button>
+
+
+<a-card class="mt-l">
+  <h3 slot="header">Code</h3>
+  <code><pre>&lt;a-modal visible="true">
+  &lt;div slot="header">&lt;/div>
+  &lt;div slot="body">&lt;/div>
+  &lt;div slot="footer">&lt;/div>
+&lt;/a-modal></pre>
+  </code>
+</a-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <a-modal [visible]="isVisible">
-  <h3 slot="header">Title</h3>
+  <div slot="header">Title</div>
   <div slot="body">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation

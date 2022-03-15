@@ -1,0 +1,27 @@
+<a-card class="mt-m">
+  <h1 slot="header">Dropdown</h1>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</a-card>
+
+<a-dropdown placeholder="select"
+            [options]="options"
+            [showclear]="true"
+            (selectChanged)="onSelect($event)"
+            [selected]="selectedCountry"
+></a-dropdown>
+
+<a-card class="mt-m">
+  <h2 slot="header">Code</h2>
+  <code>
+    <pre>&lt;a-dropdown placeholder="select"
+                options="options"
+                selected="selectedCountry">
+  &lt;/a-dropdown></pre>
+  </code>
+</a-card>
+
+<a-table scrollable="true" [columns]="cols" [data]="data"></a-table>
+
+<a-table class="mt-l" scrollable="true" [columns]="styleCols" [data]="styleData"></a-table>

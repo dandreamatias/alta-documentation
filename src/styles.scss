@@ -20,10 +20,67 @@ body {
 
 router-outlet + * {
   width: 100%;
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 0 auto;
+  font-size: 14px;
+  padding-bottom: 4rem;
 }
+
 :root {
   --sidebar-width: 250px;
   --nav-height: 56px;
+  // alta
+  --alta-primary-color: #073b4c;
+  --alta-font-color: #073b4c;
+  --alta-border-radius: 0.25rem;
+  --alta-border: 1px solid #dfdfdf;
+  --alta-progress-value: #abe2bb;
+  --alta-progress-background: #f3f3f3;
+  --alta-focus-color: #118ab2;
+  --alta-danger-bg: #ef8181;
+  --alta-danger-color: white;
+  --alta-success-bg: #86f3ad;
+  --alta-success-color: white;
+  --alta-warning-bg: #fff4b4;
+  --alta-warning-color: #444;
+}
+code {
+  display: block;
+}
+pre {
+  font-family: monospace;
+  padding: .25rem;
+  font-size: .9rem;
+}
+
+// alta-ui
+a-card {
+  margin: 0 0 3rem;
+  --card-shadow: none;
+  --alta-border: none;
+}
+
+a-table {
+  background-color: white;
+}
+
+// utils
+
+.h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bg-w {
+  background-color: white;
+}
+.mt-s {
+  margin-top: 1rem;
+}
+.mt-m {
+  margin-top: 2rem;
+}
+.mt-l {
+  margin-top: 4rem;
 }
