@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -44,13 +45,26 @@ router-outlet + * {
   --alta-warning-bg: #fff4b4;
   --alta-warning-color: #444;
 }
+
 code {
   display: block;
+  padding: 1rem;
+  margin: .5rem 0;
+  background-color: #444;
+  border-radius: 0.25rem;
 }
+
 pre {
   font-family: monospace;
   padding: .25rem;
   font-size: .9rem;
+  color: white;
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  background-color: transparent;
 }
 
 // alta-ui
@@ -64,6 +78,25 @@ a-table {
   background-color: white;
 }
 
+a-tabset {
+  --tabs-background-color: #ffffff00;
+  --tab-selected-color: black;
+  --tab-color: rgba(18, 51, 111, 0.6);
+  --tab-content-padding: 2rem 0;
+  --tab-font-size: 1rem;
+  --alta-border: 1px solid transparent;
+  --selected-border-bottom: .25rem solid #073b4c;
+}
+
+a-tabset {
+  a-table {
+    --table-background-color: white;
+    --table-head-background: #ffffff;
+    --table-cell-padding: 0.5rem;
+    border-radius: .25rem;
+  }
+}
+
 // utils
 
 .h3 {
@@ -75,12 +108,31 @@ a-table {
 .bg-w {
   background-color: white;
 }
+
 .mt-s {
   margin-top: 1rem;
 }
+
 .mt-m {
   margin-top: 2rem;
 }
+
 .mt-l {
   margin-top: 4rem;
+}
+
+.mr-m {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 960px) {
+  .mt-s {
+    margin-top: .5rem;
+  }
+  .mt-m {
+    margin-top: 1rem;
+  }
+  .mt-l {
+    margin-top: 2rem;
+  }
 }

@@ -4,6 +4,8 @@
   messages.The easiest way to add an alerts component to your app.
 </a-card>
 
+
+
 <a-alert class="mt-l" type="info">
   <h3>Type info</h3>
   <p>some content</p>
@@ -21,20 +23,19 @@
   Type warning
 </a-alert>
 
-<a-card class="mt-l">
-  <h3 slot="header">Code</h3>
-  <code><pre>&lt;a-alert type="warning">
+
+
+<a-tabset selected="0" class="mt-l">
+  <a-tab header="Code" index="0">
+    <code><pre>&lt;a-alert type="warning">
   Type warning
 &lt;/a-alert></pre>
-  </code>
-</a-card>
-
-<a-card class="mt-l">
-  <h3 slot="header">API</h3>
-</a-card>
-
-
-<a-card>
-  <h3 slot="header">Style</h3>
-  <a-list [items]="cssValiables"></a-list>
-</a-card>
+    </code>
+  </a-tab>
+  <a-tab header="API" index="1">
+    selected
+  </a-tab>
+  <a-tab header="Style" index="2">
+    <a-list [items]="cssValiables"></a-list>
+  </a-tab>
+</a-tabset>

@@ -1,0 +1,63 @@
+app-card {
+  .classic {
+    --card-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    --card-header-font: 1.25rem;
+    --card-background: white;
+    --card-padding: 1rem;
+    display: block;
+  }
+
+  .custom {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    a-card {
+      --card-background: transparent;
+      border-radius: .25rem;
+      --card-header-font: .9rem;
+      --card-padding: .5rem;
+      flex: 1;
+      margin-bottom: 0;
+    }
+
+    .content {
+      padding: 2rem 0;
+    }
+
+    a-card:nth-child(1) {
+      background: linear-gradient(229deg, #8edead, #43c6ac);
+    }
+
+    a-card:nth-child(2) {
+      background: linear-gradient(248deg, #348ac7, #7474bf)
+    }
+
+    a-card:last-child {
+      background: linear-gradient(67deg, #b24592, #f15f79)
+    }
+  }
+
+  .no-api {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: #535353;
+    }
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  app-card {
+    .custom {
+      a-card {
+        flex: auto;
+        width: 100%;
+      }
+    }
+  }
+}

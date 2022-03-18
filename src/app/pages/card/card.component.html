@@ -1,0 +1,73 @@
+<a-card class="mt-m">
+  <h2 slot="header">Card</h2>
+  Provides contextual feedback messages for typical user actions with the handful of available and flexible alert
+  messages.The easiest way to add an alerts component to your app.
+</a-card>
+
+
+<h3>Basic</h3>
+<a-card class="classic">some content here</a-card>
+
+<h3>Template</h3>
+<a-card class="classic">
+  <h4 slot="header">Header</h4>
+  some content here
+</a-card>
+
+<h3>Custom</h3>
+<div class="custom">
+  <a-card><b slot="header">info</b>
+    <div class="content"></div>
+  </a-card>
+  <a-card><b slot="header">info</b>
+    <div class="content"></div>
+  </a-card>
+  <a-card><b slot="header">info</b>
+    <div class="content"></div>
+  </a-card>
+</div>
+
+
+<a-tabset selected="0" class="mt-l">
+  <a-tab header="Code" index="0">
+    <h3 class="mt-m">Basic Card</h3>
+    <code>
+      <pre>&lt;a-card>some content here&lt;/a-card></pre>
+    </code>
+    <h3 class="mt-m">Template Card</h3>
+    <code>
+      <pre>
+&lt;a-card>
+   &lt;h4 slot="header">Header&lt;/h4>
+   some content here
+&lt;/a-card></pre>
+    </code>
+    <h3 class="mt-m">Custom Card</h3>
+    <code>
+      <pre>
+&lt;style>
+   a-card.custom {{'{'}}
+      --card-background: transparent;
+      border-radius: .25rem;
+      --card-header-font: .9rem;
+      --card-padding: .5rem;
+      flex: 1;
+      background: linear-gradient(229deg, #8edead, #43c6ac);
+   {{'}'}}
+&lt;style>
+
+&lt;a-card class="custom">
+   &lt;h4 slot="header">Header&lt;/h4>
+   some content here
+&lt;/a-card></pre>
+    </code>
+  </a-tab>
+  <a-tab header="API" index="1">
+    <div class="no-api">
+      <p>No api for card component, it's just a wrapper</p>
+    </div>
+  </a-tab>
+  <a-tab header="Style" index="2">
+    no style
+  </a-tab>
+</a-tabset>

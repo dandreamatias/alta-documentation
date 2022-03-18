@@ -12,16 +12,23 @@
             [selected]="selectedCountry"
 ></a-dropdown>
 
-<a-card class="mt-m">
-  <h2 slot="header">Code</h2>
-  <code>
-    <pre>&lt;a-dropdown placeholder="select"
-                options="options"
-                selected="selectedCountry">
-  &lt;/a-dropdown></pre>
-  </code>
-</a-card>
+<a-tabset class="mt-l" selected="0">
+  <a-tab header="Code" index="0">
+    <code>
+    <pre>&lt;a-dropdown
+      placeholder="select"
+      options="options"
+      selected="selectedCountry">
+&lt;/a-dropdown></pre>
+    </code>
+  </a-tab>
+  <a-tab header="API" index="1">
+    <h3>Properties</h3>
+    <a-table scrollable="true" [columns]="cols" [data]="data"></a-table>
+    <h3>Events</h3>
 
-<a-table scrollable="true" [columns]="cols" [data]="data"></a-table>
-
-<a-table class="mt-l" scrollable="true" [columns]="styleCols" [data]="styleData"></a-table>
+  </a-tab>
+  <a-tab header="Style" index="2">
+    <a-table class="mt-l" scrollable="true" [columns]="styleCols" [data]="styleData"></a-table>
+  </a-tab>
+</a-tabset>
