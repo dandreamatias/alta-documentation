@@ -9,8 +9,10 @@ import {InputTextComponent} from './pages/input-text/input-text.component';
 import {ProgressComponent} from './pages/progress/progress.component';
 import {TableComponent} from './pages/table/table.component';
 import {DropdownComponent} from './pages/dropdown/dropdown.component';
-import {RatingComponent} from './rating/rating.component';
-import {PanelComponent} from './panel/panel.component';
+import {RatingComponent} from './pages/rating/rating.component';
+import {PanelComponent} from './pages/panel/panel.component';
+import {AvatarComponent} from './pages/avatar/avatar.component';
+import {CardComponent} from './pages/card/card.component';
 
 const routes: Routes = [
   {
@@ -25,6 +27,14 @@ const routes: Routes = [
   {
     path: 'alert',
     component: AlertComponent
+  },
+  {
+    path: 'avatar',
+    component: AvatarComponent
+  },
+  {
+    path: 'card',
+    component: CardComponent
   },
   {
     path: 'modal',
