@@ -13,6 +13,17 @@ import {RatingComponent} from './pages/rating/rating.component';
 import {PanelComponent} from './pages/panel/panel.component';
 import {AvatarComponent} from './pages/avatar/avatar.component';
 import {CardComponent} from './pages/card/card.component';
+import {TabsComponent} from './pages/tabs/tabs.component';
+import {TagComponent} from './pages/tag/tag.component';
+import {ToastComponent} from './pages/toast/toast.component';
+import {PaginationComponent} from './pages/pagination/pagination.component';
+import {ListComponent} from './pages/list/list.component';
+import {CarouselComponent} from './pages/carousel/carousel.component';
+import {ButtonsComponent} from './pages/buttons/buttons.component';
+import {BreadcrumbComponent} from './pages/breadcrumb/breadcrumb.component';
+import {WhyAltaComponent} from './pages/why-alta/why-alta.component';
+import {ThemingComponent} from './pages/theming/theming.component';
+import {AccorditionComponent} from './pages/accordition/accordition.component';
 
 const routes: Routes = [
   {
@@ -67,6 +78,50 @@ const routes: Routes = [
   {
     path: 'panel',
     component: PanelComponent
+  },
+  {
+    path: 'tabs',
+    component: TabsComponent
+  },
+  {
+    path: 'tag',
+    component: TagComponent
+  },
+  {
+    path: 'toast',
+    component: ToastComponent
+  },
+  {
+    path: 'pagination',
+    component: PaginationComponent
+  },
+  {
+    path: 'list',
+    component: ListComponent
+  },
+  {
+    path: 'carousel',
+    component: CarouselComponent
+  },
+  {
+    path: 'buttons',
+    component: ButtonsComponent
+  },
+  {
+    path: 'breadcrumb',
+    component: BreadcrumbComponent
+  },
+  {
+    path: 'accordition',
+    component: AccorditionComponent
+  },
+  {
+    path: 'why-alta',
+    component: WhyAltaComponent
+  },
+  {
+    path: 'theming',
+    component: ThemingComponent
   }
 ];
 
