@@ -24,6 +24,8 @@ import {BreadcrumbComponent} from './pages/breadcrumb/breadcrumb.component';
 import {WhyAltaComponent} from './pages/why-alta/why-alta.component';
 import {ThemingComponent} from './pages/theming/theming.component';
 import {AccorditionComponent} from './pages/accordition/accordition.component';
+import {LoaderComponent} from './pages/loader/loader.component';
+import {DividerComponent} from './pages/divider/divider.component';
 
 const routes: Routes = [
   {
@@ -122,6 +124,14 @@ const routes: Routes = [
   {
     path: 'theming',
     component: ThemingComponent
+  },
+  {
+    path: 'loader',
+    component: LoaderComponent
+  },
+  {
+    path: 'divider',
+    component: DividerComponent
   }
 ];
 

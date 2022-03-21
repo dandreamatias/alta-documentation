@@ -30,6 +30,8 @@ import {WhyAltaComponent} from './pages/why-alta/why-alta.component';
 import {ThemingComponent} from './pages/theming/theming.component';
 import {CarouselComponent} from './pages/carousel/carousel.component';
 import {AccorditionComponent} from './pages/accordition/accordition.component';
+import { LoaderComponent } from './pages/loader/loader.component';
+import { DividerComponent } from './pages/divider/divider.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,9 @@ import {AccorditionComponent} from './pages/accordition/accordition.component';
     WhyAltaComponent,
     ThemingComponent,
     CarouselComponent,
-    AccorditionComponent
+    AccorditionComponent,
+    LoaderComponent,
+    DividerComponent
   ],
   imports: [
     BrowserModule,
