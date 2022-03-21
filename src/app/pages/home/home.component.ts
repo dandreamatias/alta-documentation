@@ -15,6 +15,6 @@ export class HomeComponent implements OnInit {
   }
 
   onDiscoverClick() {
-    this.router.navigate(['get-started'])
+    this.router.navigate(['why-alta'])
   }
 }

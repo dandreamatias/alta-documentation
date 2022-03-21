@@ -7,45 +7,40 @@
 <div class="menu-wrapper">
   <h3>General</h3>
   <ul>
-    <li (click)="onMenuClick()" routerLinkActive="active">
-      <a [routerLink]="['/get-started']" >Get Started</a>
+    <li routerLinkActive="active" (click)="onMenuClick()">
+      <a [routerLink]="['/why-alta']">Why Alta?</a>
     </li>
-    <li (click)="onMenuClick()">Theming</li>
-    <li (click)="onMenuClick()">Why Alta</li>
-    <li (click)="onMenuClick()">Upgrade</li>
+    <li (click)="onMenuClick()" routerLinkActive="active">
+      <a [routerLink]="['/get-started']">Get Started</a>
+    </li>
+    <li routerLinkActive="active" (click)="onMenuClick()"><a [routerLink]="['/theming']">Theming</a></li>
   </ul>
   <h3>Components</h3>
   <ul>
-    <li>Accordition</li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/accordition']">Accordition</a></li>
     <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/alert']">Alert</a></li>
     <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/avatar']">Avatar</a></li>
-    <li>Breadcrumb</li>
-    <li>Buttons</li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/breadcrumb']">Breadcrumb</a></li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/buttons']">Buttons</a></li>
     <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/card']">Card</a></li>
-    <li>Carousel</li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/carousel']">Carousel</a></li>
     <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/dropdown']">Dropdown</a></li>
     <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/image']">Image</a></li>
     <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/input-text']">Input text</a></li>
-    <li>Input number</li>
-    <li>Input password</li>
-    <li>Input checkbox</li>
-    <li>Input radio</li>
-    <li>Input upload</li>
-    <li>List</li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/list']">List</a></li>
     <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/modal']">Modal</a></li>
-    <li>Pagination</li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/pagination']">Pagination</a></li>
     <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/panel']">Panel</a></li>
     <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/progress']">Progress</a></li>
     <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/rating']">Rating</a></li>
     <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/table']">Table</a></li>
-    <li>Tabs</li>
-    <li>Tag</li>
-    <li>Toast</li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/tabs']">Tabs</a></li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/tag']">Tag</a></li>
+    <li (click)="onMenuClick()" routerLinkActive="active"><a [routerLink]="['/toast']">Toast</a></li>
   </ul>
   <h3>Others</h3>
   <ul>
     <li>Changelog</li>
-    <li>Donate</li>
     <li>Contribute</li>
   </ul>
 </div>
