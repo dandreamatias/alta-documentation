@@ -8,16 +8,22 @@
 <a-button (click)="isVisible = true" text="Show Modal"></a-button>
 
 
-<a-card class="mt-l">
-  <h3 slot="header">Code</h3>
-  <code><pre>&lt;a-modal visible="true">
+<a-tabset selected="0" class="mt-l">
+  <a-tab header="Code" index="0">
+    <code><pre>&lt;a-modal visible="true">
   &lt;div slot="header">&lt;/div>
   &lt;div slot="body">&lt;/div>
   &lt;div slot="footer">&lt;/div>
 &lt;/a-modal></pre>
-  </code>
-</a-card>
+    </code>
+  </a-tab>
+  <a-tab header="API" index="1">
+    selected
+  </a-tab>
+  <a-tab header="Style" index="2">
 
+  </a-tab>
+</a-tabset>
 
 
 
