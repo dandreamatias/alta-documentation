@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-grow: 1;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 router-outlet + * {
@@ -52,6 +53,7 @@ code {
   margin: .5rem 0;
   background-color: #444;
   border-radius: 0.25rem;
+  overflow-x: auto;
 }
 
 pre {
