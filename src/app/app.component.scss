@@ -3,10 +3,12 @@ app-root {
   flex-direction: column;
   height: 100%;
   flex-grow: 1;
+  overflow-x: hidden;
 
   .layout-wrapper {
     flex-grow: 1;
     display: flex;
+    overflow-x: hidden;
   }
 
   .layout-content {
@@ -22,6 +24,7 @@ app-root {
   app-root {
     .layout-content {
       margin-left: 0;
+      overflow-x: hidden;
       padding: calc(var(--nav-height) + 1rem) 1rem 0;
     }
 
