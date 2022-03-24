@@ -7,4 +7,11 @@
 
 <a-input [value]="inputValue" (valueChanged)="onChange($event)"></a-input>
 
-<button (click)="onClick()">log</button>
+
+<a-tabset selected="0" class="mt-l">
+  <a-tab header="Code" index="0">
+    <code>
+      <pre>&lt;a-input value="inputValue">&lt;/a-input></pre>
+    </code>
+  </a-tab>
+</a-tabset>

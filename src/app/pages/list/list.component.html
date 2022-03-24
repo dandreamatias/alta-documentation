@@ -1,1 +1,15 @@
-<p>list works!</p>
+
+<a-card class="mt-m">
+    <h1 slot="header">List</h1>
+  </a-card>
+  
+<a-list [items]="items"></a-list>
+  
+  
+  <a-tabset selected="0" class="mt-l">
+    <a-tab header="Code" index="0">
+      <code>
+        <pre>&lt;a-list items="['do something', 'buy milk', 'call to info']">&lt;/a-list></pre>
+      </code>
+    </a-tab>
+  </a-tabset>
