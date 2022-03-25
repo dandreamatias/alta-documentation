@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
-
+  items = ['do something', 'buy milk', 'call to info']
   constructor() { }
 
   ngOnInit(): void {

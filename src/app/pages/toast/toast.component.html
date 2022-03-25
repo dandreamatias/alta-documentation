@@ -1,1 +1,16 @@
-<p>toast works!</p>
+
+<a-card class="mt-m">
+    <h1 slot="header">Tag</h1>
+  </a-card>
+  
+  <a-button id='toast' text='Show Toast' (click)="onToastShow()"></a-button>
+  <a-toast [message]="message"></a-toast>
+  
+  
+  <a-tabset selected="0" class="mt-l">
+    <a-tab header="Code" index="0">
+      <code>
+        <pre>&lt;a-toast message="message">&lt;/a-toast></pre>
+      </code>
+    </a-tab>
+  </a-tabset>

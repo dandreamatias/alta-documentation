@@ -6,6 +6,7 @@ app-home {
   justify-content: center;
   flex-direction: column;
   padding-bottom: 5rem;
+  animation: appear 1s linear forwards;
 
   h1 {
     font-size: 3.5rem;
@@ -15,9 +16,18 @@ app-home {
     font-size: 1.825rem;
     padding: 2rem 4rem 3rem;
     text-align: center;
+
   }
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
 
 @media screen and (max-width: 960px) {
   app-home {
